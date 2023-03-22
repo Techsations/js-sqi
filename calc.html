@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+               <div class="big-display">
+                    <div class="display-1">
+                        <input class="origin" type="text" id="history" value="Ans" disabled>
+                    </div>
+                    <div class="display-2">
+                        <input class="origin text" type="text" id="display" value="0">
+                    </div>
+               </div>
+                <div>
+                    <input type="button" value="Rad | Deg" onclick=" "  class="rad">
+                    <input type="button" value="x!" onclick="display.value += '!' ">
+                    <input type="button" value="(" onclick="display.value = '(' ">
+                    <input type="button" value=")" onclick="display.value = ')'">
+                    <input type="button" value="%" onclick="display.value += '.' ">
+                    <input type="button" value="CE" onclick="display.value = display.value.toString().slice
+                    (0,-1)" ">
+                    
+                </div>
+                <div>
+                    <input type="button" value="Inv" onclick=" show('7') ">
+                    <input type="button" value="sin" onclick="display.value += 'sin()' ">
+                    <input type="button" value="In" onclick="display.value += 'In()' ">
+                    <input class="btn" type="button" value="7" onclick=" show('7') ">
+                    <input class="btn" type="button" value="8" onclick=" show('8') "> 
+                    <input class="btn" type="button" value="9" onclick=" show('9') ">
+                    <input type="button" value="÷" onclick=" show('/') ">
+                </div>
+                <div>
+                    <input type="button" value="π" onclick=" show('π') ">
+                    <input type="button" value="cos" >
+                    <input type="button" value="log" >
+                    <input class="btn" type="button" value="4" onclick=" show('4') ">
+                    <input class="btn" type="button" value="5" onclick=" show('5') ">
+                    <input class="btn" type="button" value="6" onclick=" show('6') ">
+                    <input type="button" value="x" onclick=" show('*') ">
+                </div>
+                <div>
+                    <input type="button" value="e" onclick="display.value += 'e' ">
+                    <input type="button" value="tan" onclick="display.value += 'tan()' ">
+                    <input type="button" value="√" onclick="squareroot()">
+                    <input class="btn" type="button" value="1" onclick=" show('1') ">
+                    <input class="btn" type="button" value="2" onclick=" show('2') ">
+                    <input class="btn" type="button" value="3" onclick=" show('3') ">
+                    <input type="button" value="-" onclick=" show('-') ">
+                </div>
+                <div>
+                    <input type="button" value="Ans" onclick="display.value += '00' ">
+                    <input type="button" value="EXP" onclick="display.value += 'E' ">
+                    <input type="button" value="x" onclick="display.value += '**' ">
+                    <input class="btn" type="button" value="0" onclick=" show('0')">
+                    <input class="btn" type="button" value="." onclick=" show('.') ">
+                    <input class="eqbtn" type="button" value="=" onclick="equalTo()">
+                    <input type="button" value="+" onclick=" show('+') ">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
